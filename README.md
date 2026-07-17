@@ -9,26 +9,29 @@ This repo is my personal practice log as I build a strong foundation in front-en
 I'm learning full-stack web development from scratch, and this repository documents that progress through small, focused practice projects and assignments. Each folder represents a stage in the learning path, containing exercises, mini-projects, and experiments tied to that topic.
 
 ## 🗂️ Repository Structure
+
+```text
 WebDevPractice/
 │
-├── 1-html/              # HTML fundamentals & practice assignments
+├── 1-html/
 │   ├── HTML_ass_1
 │   ├── HTML_ass_2
 │   ├── HTML_ass_3
-│   └── HTML_ass_4        # Forms, iframes, embedded content, mini company portal
-│
-├── 2-css/               # Core CSS concepts & styling practice
+│   └── HTML_ass_4
+
+├── 2-css/
 │   ├── css-ass-1
 │   ├── css-ass-2
 │   └── css-ass-3
-│
-├── 3-tailwind-css/      # Utility-first CSS with Tailwind (in progress)
-│
-├── javascript/          # JavaScript fundamentals & DOM practice
-│
-├── node-js/             # Backend basics with Node.js
-│
-└── react/               # Front-end framework practice with React
+
+├── 3-tailwind-css/
+
+├── javascript/
+
+├── node-js/
+
+└── react/
+```
 ## 🚀 Learning Path & Progress
 
 ### Frontend
