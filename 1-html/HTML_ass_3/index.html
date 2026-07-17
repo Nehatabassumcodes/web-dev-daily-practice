@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Task 1:</h1>
+    <h2>Student Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="reg-name">Student Name:</label>
+            <input type="text" id="reg-name" name="student-name" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="reg-email">Email:</label>
+            <input type="email" id="reg-email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="reg-phone">Phone Number:</label>
+            <input type="number" id="reg-phone" name="phone-number" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="reg-age">Age:</label>
+            <input type="number" id="reg-age" name="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="option-group">
+                <div class="option">
+                    <input type="radio" id="reg-male" name="gender">
+                    <label for="reg-male">Male</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="reg-female" name="gender">
+                    <label for="reg-female">Female</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="reg-other" name="gender" value="Other">
+                    <label for="reg-other">Other</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-dob">Date Of Birth:</label>
+            <input type="date" id="reg-dob" name="date-of-birth">
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>Task 2:</h1>
+    <h2>Feedback Form</h2>
+    <form>
+        <!-- name, email, rating (1-5 using radio), suggestions (textarea), submit button -->
+        <div class="form-group">
+            <label for="fb-name">Name:</label>
+            <input type="text" id="fb-name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="fb-email">Email:</label>
+            <input type="email" id="fb-email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label>Rating (1-5):</label>
+            <div class="option-group">
+                <div class="option">
+                    <input type="radio" id="fb-rating1" name="rating" value="1">
+                    <label for="fb-rating1">1</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="fb-rating2" name="rating" value="2">
+                    <label for="fb-rating2">2</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="fb-rating3" name="rating" value="3">
+                    <label for="fb-rating3">3</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="fb-rating4" name="rating" value="4">
+                    <label for="fb-rating4">4</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="fb-rating5" name="rating" value="5">
+                    <label for="fb-rating5">5</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="fb-suggestions">Suggestions:</label>
+            <textarea id="fb-suggestions" name="suggestions" placeholder="Write your suggestions here..."></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>Task 3:</h1>
+    <h2>Newsletter Subscription Form</h2>
+    <form>
+        <!-- name, email, preferred topics (checkboxes): technology, sports, movies, education. subscribe button -->
+        <div class="form-group">
+            <label for="nl-name">Name:</label>
+            <input type="text" id="nl-name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="nl-email">Email:</label>
+            <input type="email" id="nl-email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label>Preferred Topics:</label>
+            <div class="option-group checkbox-list">
+                <div class="option">
+                    <input type="checkbox" id="nl-technology" name="preferred-topics" value="Technology">
+                    <label for="nl-technology">Technology</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="nl-sports" name="preferred-topics" value="Sports">
+                    <label for="nl-sports">Sports</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="nl-movies" name="preferred-topics" value="Movies">
+                    <label for="nl-movies">Movies</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="nl-education" name="preferred-topics" value="Education">
+                    <label for="nl-education">Education</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Subscribe">
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>Task 4:</h1>
+    <h2>Appointment Form</h2>
+    <form>
+        <!-- patient name, age, gender, doctor selection, appointment date, time slot, symptoms, emergency contact -->
+        <div class="form-group">
+            <label for="appt-patient-name">Patient Name:</label>
+            <input type="text" id="appt-patient-name" name="patient-name" placeholder="Enter patient's name">
+        </div>
+
+        <div class="form-group">
+            <label for="appt-age">Age:</label>
+            <input type="number" id="appt-age" name="age" placeholder="Enter your age">
+        </div>
+
+        <div class="form-group">
+            <label for="appt-gender">Gender:</label>
+            <select id="appt-gender" name="gender">
+                <option value="">--Select Gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="appt-doctor">Doctor:</label>
+            <select id="appt-doctor" name="doctor">
+                <option value="">--Select Doctor--</option>
+                <option value="dr_smith">Dr. Smith</option>
+                <option value="dr_johnson">Dr. Johnson</option>
+                <option value="dr_williams">Dr. Williams</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="appt-date">Appointment Date:</label>
+            <input type="date" id="appt-date" name="appointment-date">
+        </div>
+
+        <div class="form-group">
+            <label for="appt-time">Time Slot:</label>
+            <input type="time" id="appt-time" name="time-slot">
+        </div>
+
+        <div class="form-group">
+            <label for="appt-symptoms">Symptoms:</label>
+            <textarea id="appt-symptoms" name="symptoms"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="appt-emergency-contact">Emergency Contact:</label>
+            <input type="text" id="appt-emergency-contact" name="emergency-contact">
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>Task 5:</h1>
+    <h2>Hotel Booking Form</h2>
+    <form>
+        <!-- name, email, phone, checkin date, checkout date, number of guests, room type, special requests -->
+        <div class="form-group">
+            <label for="hotel-name">Name:</label>
+            <input type="text" id="hotel-name" name="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-email">Email:</label>
+            <input type="email" id="hotel-email" name="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-phone">Phone Number:</label>
+            <input type="tel" id="hotel-phone" name="phone-number" placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-checkin">Check-in Date:</label>
+            <input type="date" id="hotel-checkin" name="checkin-date">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-checkout">Checkout Date:</label>
+            <input type="date" id="hotel-checkout" name="checkout-date">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-guests">Number of Guests:</label>
+            <input type="number" id="hotel-guests" name="number-of-guests" placeholder="Enter number of guests">
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-room-type">Room Type:</label>
+            <select id="hotel-room-type" name="room-type">
+                <option value="">--Select Room Type--</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="hotel-requests">Special Requests:</label>
+            <textarea id="hotel-requests" name="special-requests" placeholder="Enter any special requests..."></textarea>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Book Now">
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>Task 6:</h1>
+    <h2>Job Application Form</h2>
+    <form>
+
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+                <label for="job-name">Name:</label>
+                <input type="text" id="job-name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="job-email">Email:</label>
+                <input type="email" id="job-email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="job-phone">Phone Number:</label>
+                <input type="tel" id="job-phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+        </fieldset>
+
+        <!-- Professional Details -->
+        <fieldset>
+            <legend>Professional Details</legend>
+
+            <div class="form-group">
+                <label for="job-experience">Experience (Years):</label>
+                <input type="number" id="job-experience" name="experience" placeholder="Enter years of experience" min="0">
+            </div>
+
+            <div class="form-group">
+                <label>Skills:</label>
+                <div class="option-group checkbox-list">
+                    <div class="option">
+                        <input type="checkbox" id="job-html" name="skills" value="HTML">
+                        <label for="job-html">HTML</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="job-css" name="skills" value="CSS">
+                        <label for="job-css">CSS</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="job-javascript" name="skills" value="JavaScript">
+                        <label for="job-javascript">JavaScript</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="job-python" name="skills" value="Python">
+                        <label for="job-python">Python</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="job-salary">Expected Salary:</label>
+                <input type="number" id="job-salary" name="salary" placeholder="Enter expected salary">
+            </div>
+
+            <div class="form-group">
+                <label for="job-portfolio">Portfolio URL:</label>
+                <input type="url" id="job-portfolio" name="portfolio" placeholder="https://example.com">
+            </div>
+        </fieldset>
+
+        <!-- Documents -->
+        <fieldset>
+            <legend>Documents</legend>
+
+            <div class="form-group">
+                <label for="job-resume">Upload Resume:</label>
+                <input type="file" id="job-resume" name="resume">
+            </div>
+
+            <div class="form-group">
+                <label for="job-coverletter">Upload Cover Letter:</label>
+                <input type="file" id="job-coverletter" name="coverletter">
+            </div>
+        </fieldset>
+
+        <!-- Declaration -->
+        <div class="option">
+            <input type="checkbox" id="job-declaration" name="declaration" required>
+            <label for="job-declaration">I hereby declare that the information provided is true and correct.</label>
+        </div>
+
+        <div class="form-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+</html>
