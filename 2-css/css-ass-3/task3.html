@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 10px;
+        }
+        
+        h1{
+            color:black;
+            
+        }
+        input[type="text"]{
+            background-color: pink;
+            color: white;
+        }
+        input[type="password"]{
+            background-color: lightyellow;
+        }
+        input[type="submit"]{
+            background-color: red;
+            color: black;
+        }
+        input[type="submit"]:hover{
+            background-color: darkred;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        
+        <label for="name">Username:</label>
+        <input type="text" id="name" placeholder="Enter you username"><br><br>
+
+        <label for="pw">Password:</label>
+        <input type="password" id="pw" placeholder="enter your password"><br><br>
+        
+
+        <label for="remember">Remember Me</label>
+        <input type="checkbox" id="remember"><br><br>
+        
+        <input type="submit" value="Login"><br><br>
+        <a href="#">Forgot Password</a>
+    </form>
+</body>
+</html>

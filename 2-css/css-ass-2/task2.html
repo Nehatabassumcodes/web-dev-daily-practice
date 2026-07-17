@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            margin: 20px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Product-Card{
+            width: 280px;
+            border-radius: 10px;
+            background-color: burlywood;
+            border:2px solid gray;
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+        }
+        .Product-Card img{
+            display:block;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        .Product-Card button{
+            padding:15px;
+            background-color:blue;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+        .Product-Card p{
+            color:brown
+        }
+        .Product-Card h2{
+            color: black;
+        }
+       
+        .Product-Card button:hover{
+            background-color:black;
+            color:white;
+        }
+        .pb{
+            text-align: center;
+            color:brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="pb">Product Box</h1>
+    <div class="Product-Card">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2025/4/507214000/KB/LG/VN/188692646/ysl-opyum-heels-premium-black-gold.jpeg" width="250" height="250">
+        <h2>YSL Heels</h2>
+        <p>Price: ₹1,00,000 </p>
+        <button>Add To Cart</button>
+    </div>
+</body>
+</html>

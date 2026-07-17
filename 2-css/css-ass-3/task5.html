@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: beige;
+        }
+        h1{
+            background-color: rgb(120, 77, 77);
+        }
+        /* PDF links */
+        a[href$=".pdf"]{
+           color: red; 
+        }
+
+        /* Word links */
+        a[href$=".docx"]{
+            color: blue;
+        }
+
+        /* ZIP links */
+        a[href$=".zip"]{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Download Files</h1>
+
+    <p>Click the links below to download the required files.</p>
+
+    <a href="Notes.pdf" download>Download PDF</a><br>
+
+    <a href="Assignment.docx" download>Download Word File</a><br>
+
+    <a href="Project.zip" download>Download ZIP File</a>
+</body>
+</html>
