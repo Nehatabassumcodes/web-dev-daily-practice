@@ -4,32 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Practice</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f7fb;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:#2c3e50;
+            margin-bottom:10px;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#666;
+            margin-bottom:40px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:280px;
+            min-height:420px;
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,.15);
+        }
+
+        .card h2{
+            color:#34495e;
+            border-left:5px solid #3498db;
+            padding-left:10px;
+            margin-bottom:20px;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        li{
+            margin:12px 0;
+        }
+
+        .btn{
+            display:block;
+            text-decoration:none;
+            background:#3498db;
+            color:white;
+            padding:12px;
+            text-align:center;
+            border-radius:8px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#217dbb;
+            transform:translateY(-2px);
+        }
+
+        footer{
+            margin-top:40px;
+            text-align:center;
+            color:#777;
+            font-size:14px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>HTML Practice Assignments</h1>
+<h1>HTML Practice Assignments</h1>
 
-    <h2>Assignment 1</h2>
-    <ul>
-        <li><a href="HTML_ass_1/index.html">Open Assignment 1</a></li>
-    </ul>
+<p class="subtitle">
+    This repository contains all my HTML practice assignments and mini projects.
+</p>
 
-    <h2>Assignment 2</h2>
-    <ul>
-        <li><a href="HTML_ass_2/index.html">Open Assignment 2</a></li>
-    </ul>
+<div class="container">
 
-    <h2>Assignment 3</h2>
-    <ul>
-        <li><a href="HTML_ass_3/index.html">Open Assignment 3</a></li>
-    </ul>
+    <!-- Assignment 1 -->
+    <div class="card">
+        <h2>Assignment 1</h2>
 
-    <h2>Assignment 4</h2>
-    <ul>
-        <li><a href="HTML_ass_4/company_portal/index.html">Company Portal</a></li>
-        <li><a href="HTML_ass_4/list&iframes.html">Lists & Iframes</a></li>
-        <li><a href="HTML_ass_4/lf.html">Forms</a></li>
-        <li><a href="HTML_ass_4/youtube.html">YouTube Embed</a></li>
-    </ul>
+        <ul>
+            <li><a class="btn" href="HTML_ass_1/index.html">task</a></li>
+        </ul>
+    </div>
+
+    <!-- Assignment 2 -->
+    <div class="card">
+        <h2>Assignment 2</h2>
+
+        <ul>
+            <li><a class="btn" href="HTML_ass_2/index.html">task</a></li>
+        </ul>
+    </div>
+
+    <!-- Assignment 3 -->
+    <div class="card">
+        <h2>Assignment 3</h2>
+
+        <ul>
+            <li><a class="btn" href="HTML_ass_3/index.html">task</a></li>
+        </ul>
+    </div>
+
+    <!-- Assignment 4 -->
+    <div class="card">
+        <h2>Assignment 4</h2>
+
+        <ul>
+            <li><a class="btn" href="HTML_ass_4/company_portal/index.html">Company Portal</a></li>
+            <li><a class="btn" href="HTML_ass_4/company_portal/home.html">Home Page</a></li>
+            <li><a class="btn" href="HTML_ass_4/company_portal/about.html">About Page</a></li>
+            <li><a class="btn" href="HTML_ass_4/company_portal/services.html">Services Page</a></li>
+            <li><a class="btn" href="HTML_ass_4/company_portal/contact.html">Contact Page</a></li>
+            <li><a class="btn" href="HTML_ass_4/lists&iframes.html">Lists & Iframes</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    Created by <strong>Neha Tabassum</strong><br>
+    Web Development Daily Practice Repository
+</footer>
+
 </body>
 </html>
